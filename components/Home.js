@@ -45,7 +45,7 @@ function Home() {
   // Hook data from backend
   const [moviesData,setMoviesData] = useState([]);
   useEffect(() => {
-    fetch('mymoviz-part5-backend-cyan-chi.vercel.app/movies')
+    fetch('https://mymoviz-part5-backend-cyan-chi.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies);
